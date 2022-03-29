@@ -1,53 +1,79 @@
 import React from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ArrowForward } from "@mui/icons-material";
 import CurrentBookingsButton from "../../components/CurrentBookingsButton/CurrentBookingsButton";
 import ProfileButton from "../../components/ProfileButton/ProfileButton";
 import CardHolderP from "../../components/CardHolderP/CardHolderP";
+import ProfilePartimerBusiness from "./ProfilePartimerBusiness";
 
 import "./HomeBusiness.css";
 
 function HomeBusiness(props) {
+  const [showHomeScreen, setShowHomeScreen] = useState(true);
   const [selected, setSelected] = useState([]);
+  const [showPartimerProfile, setShowPartimerProfile] = useState(false);
+  const [idofpartimertoshow, setIdofpartimertoshow] = useState(-1);
+
+  useEffect(() => {
+    console.log(idofpartimertoshow);
+    console.log(showPartimerProfile);
+  }, [idofpartimertoshow, showPartimerProfile]);
 
   return (
-    <div>
-      <div className="profileNearMe">
-        <ProfileButton />
-        <p className="nearmeText">Partimers Near Me.</p>
-      </div>
+    <>
+      {showPartimerProfile ? (
+        <div className="partimerProfileScreen">
+          <ProfilePartimerBusiness
+            setShowPartimerProfile={setShowPartimerProfile}
+          />
+        </div>
+      ) : (
+        <></>
+      )}
 
-      <CurrentBookingsButton />
-      <div className="homeBusinessSearch">
-        <form className="homesearchformb">
-          <label>
-            <input
-              type="text"
-              name="name"
-              placeholder="Search"
-              className="homesearchb"
-            />
-          </label>
-          <input type="submit" value="ⓢ" className="homesearchSb" />
-        </form>
-      </div>
-      <p className="nearmeTextSort">▾</p>
-      {/* <div className="sorter">
+      <div>
+        <div className="profileNearMe">
+          <ProfileButton />
+          <p className="nearmeText">Partimers Near Me.</p>
+        </div>
+
+        <CurrentBookingsButton />
+        <div className="homeBusinessSearch">
+          <form className="homesearchformb">
+            <label>
+              <input
+                type="text"
+                name="name"
+                placeholder="Search"
+                className="homesearchb"
+              />
+            </label>
+            <input type="submit" value="ⓢ" className="homesearchSb" />
+          </form>
+        </div>
+        <p className="nearmeTextSort">▾</p>
+        {/* <div className="sorter">
         <p className="nearmeTextSort">▾</p>
       </div> */}
-      <CardHolderP selected={selected} setSelected={setSelected} />
-      <div className="homeNextButtonDiv">
-        <button className="homeNextButton">
-          <p className="homeNextText">Next</p>
-          <div>
-            <ArrowForward className="homeNextArrow" />
+        <CardHolderP
+          selected={selected}
+          setSelected={setSelected}
+          setIdofpartimertoshow={setIdofpartimertoshow}
+          setShowPartimerProfile={setShowPartimerProfile}
+        />
+        <div className="homeNextButtonDiv">
+          <button className="homeNextButton">
+            <p className="homeNextText">Next</p>
             <div>
-              <p className="homeNextTextNum">{selected.length}</p>
+              <ArrowForward className="homeNextArrow" />
+              <div>
+                <p className="homeNextTextNum">{selected.length}</p>
+              </div>
             </div>
-          </div>
-        </button>
+          </button>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

@@ -2,9 +2,9 @@ import React from "react";
 import ProfileCardHolder from "../../components/ProfileCardHolder/ProfileCardHolder";
 import "./ProfilePartimerBusiness.css";
 
-function ProfilePartimerBusiness(props) {
+function ProfilePartimerBusiness({ setShowPartimerProfile }) {
   return (
-    <div>
+    <div className="absolute">
       <div className="maindivtop">
         <div className="almostAll">
           <div className="profile">
@@ -34,7 +34,10 @@ function ProfilePartimerBusiness(props) {
       <ProfileCardHolder />
       <div className="maindivbottom">
         <div className="twobuttons">
-          <buton className="backButton">
+          <buton
+            className="backButton"
+            onClick={() => setShowPartimerProfile(false)}
+          >
             <p className="backButtonText">back</p>
           </buton>
         </div>

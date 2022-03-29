@@ -3,7 +3,12 @@ import { useEffect, useState } from "react";
 import Card from "../Card/Card";
 import "./CardHolderP.css";
 
-function CardHolderP({ selected, setSelected }) {
+function CardHolderP({
+  selected,
+  setSelected,
+  setIdofpartimertoshow,
+  setShowPartimerProfile,
+}) {
   // const [selected, setSelected] = useState([]);
 
   const handleSelect = (id) => {
@@ -68,7 +73,8 @@ function CardHolderP({ selected, setSelected }) {
   ];
 
   function functionName(partimerNM) {
-    console.log("Hey there", partimerNM);
+    setIdofpartimertoshow(partimerNM);
+    setShowPartimerProfile(true);
   }
   return (
     <div className="cardHolder">

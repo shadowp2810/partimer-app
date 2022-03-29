@@ -85,3 +85,8 @@
   display: flex;
   flex-direction: row-reverse;
 }
+
+.partimerProfileScreen {
+  display: flex;
+  justify-content: center;
+}
