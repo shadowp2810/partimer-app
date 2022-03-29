@@ -1,0 +1,103 @@
+.cardDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardBody {
+  display: flex;
+  width: 340px;
+  height: 120px;
+  background-color: #c4c4c4;
+  justify-content: center;
+  margin-top: 3px;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+
+.cardRating {
+  display: flex;
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.cardNameTags {
+  width: 238px;
+  height: 120px;
+  /* background-color: #aaaaaa; */
+  /* padding-left: 5px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardName {
+  font-size: 24px;
+  /* margin-top: 5px; */
+  margin-left: 5px;
+}
+
+.cardNameP {
+  font-size: 26px;
+  /* margin-top: 5px; */
+  margin-left: 5px;
+}
+
+.cardSelectorDiv {
+  width: 55px;
+  height: 120px;
+  background-color: #424242;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardSelectorHole {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: white;
+}
+
+.cardArrowKM {
+  width: 102px;
+  height: 120px;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.profileArrowC {
+  /* position: fixed; */
+  /* left: 70px; */
+  /* top: 8px; */
+  transform: rotate(-45deg) scale(2);
+  padding-top: 6px;
+  margin-right: 10px;
+}
+
+.cardKM {
+  margin-right: 12px;
+  font-size: 19px;
+}
+
+.homesearchformb {
+  width: 100%;
+  height: 100%;
+}
+
+.homesearchb {
+  width: 80%;
+  font-size: 20px;
+  height: 85%;
+  background-color: #c4c4c4;
+}
+
+.homesearchSb {
+  width: 47px;
+  height: 47px;
+  font-size: 18px;
+}

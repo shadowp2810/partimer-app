@@ -1,0 +1,31 @@
+.profileButton {
+  display: flex;
+  flex-direction: column;
+  background-color: #c4c4c4;
+  margin-left: 5px;
+  margin-top: 5px;
+  height: 70px;
+  /* border: none; */
+  border-width: 0.5px;
+  border-color: #c4c4c4;
+  text-align: center;
+  text-decoration: none;
+  /* -webkit-box-shadow: -1px 6px 7px 0px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: -1px 6px 7px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: -1px 6px 7px 0px rgba(0, 0, 0, 0.12); */
+}
+
+.profileText {
+  font-size: 24px;
+  font-family: "DM Sans", sans-serif;
+  padding-left: 1px;
+  padding-right: 8px;
+  padding-top: 17px;
+}
+
+.profileArrow {
+  position: fixed;
+  left: 70px;
+  /* top: 8px; */
+  transform: rotate(-45deg) scale(1.5);
+}

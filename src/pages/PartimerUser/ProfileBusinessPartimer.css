@@ -1,0 +1,125 @@
+.maindivtop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.almostAll {
+  width: 340px;
+  height: 135px;
+  border-bottom: 1px solid black;
+}
+
+.maindivbottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.twobuttons {
+  width: 340px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid black;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+}
+
+.detailsDiv {
+  width: 261px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pnameNumberText {
+  margin-left: 0px;
+  width: 238px;
+}
+.pnameText {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.numberText {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.addressText {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.kmRating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.kmtext {
+  font-size: 20px;
+}
+
+.kmrating {
+  font-size: 22px;
+}
+
+.backButton {
+  margin-top: 10px;
+  width: 100px;
+  height: 50px;
+  background-color: #c4c4c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backButtonText {
+  font-size: 20px;
+}
+
+.addressText {
+  font-size: 20px;
+}
+
+.backButtonTextA {
+  font-size: 24px;
+}
+
+.backButtonA {
+  margin-top: 10px;
+  width: 100px;
+  height: 50px;
+  background-color: #c4c4c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.hourstotaldiv {
+  margin-top: 15px;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  /* background-color: red; */
+}
+
+.hours {
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+.total {
+  font-size: 25px;
+  margin-right: 5px;
+}

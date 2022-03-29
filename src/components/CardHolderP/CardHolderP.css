@@ -1,0 +1,54 @@
+.cardHolder {
+  height: 350px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.buttonDiv {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.buttonStyle {
+  padding: 0px 0px;
+  margin: 0px 0px;
+  border-width: 0.01px;
+  border-color: #c4c4c4;
+}
+
+.cardSelectorDiv {
+  width: 55px;
+  height: 120px;
+  background-color: #424242;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardSelectorHole {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardSelectorHoleSelected {
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  background-color: #121212;
+}
+
+.cardSelectorHoleSelectedRed {
+  width: 15px;
+  height: 15px;
+  border-radius: 20px;
+  background-color: red;
+}

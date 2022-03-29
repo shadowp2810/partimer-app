@@ -1,0 +1,126 @@
+.mainDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainDivwidth {
+  width: 340px;
+}
+
+.pageTitle {
+  height: 80px;
+  /* background-color: red; */
+}
+
+.pageTitleText {
+  font-size: 40px;
+  margin-top: 10px;
+}
+
+.hoursForm {
+  width: 50px;
+}
+
+.inputHoursForm {
+  width: 50px;
+  font-size: 24px;
+  margin-right: 2px;
+  margin-left: 2px;
+  background-color: #c4c4c4;
+}
+
+.phoursForm {
+  display: flex;
+  flex-direction: row;
+  font-size: 24px;
+}
+
+.prateform {
+  display: flex;
+  flex-direction: row;
+  font-size: 24px;
+}
+
+.hoursFormDiv {
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-left: 4px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.hoursFormDivrate {
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-left: 20px;
+  padding-right: 10px;
+}
+
+.removeAndList {
+  padding-top: 10px;
+}
+
+.removeDiv {
+  width: 80px;
+  height: 30px;
+  background-color: #c4c4c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.removep {
+  font-size: 22px;
+}
+
+.removeDivMain {
+  width: 340px;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 2px;
+}
+
+.twobuttonsMainDiv {
+  width: 340px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2px;
+  /* justify-content: space-between; */
+}
+
+.twobuttonsDiv {
+  width: 340px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.backbuttonDiv {
+  width: 80px;
+  height: 40px;
+  background-color: #c4c4c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.bookbuttonDiv {
+  width: 100px;
+  height: 50px;
+  background-color: #c4c4c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.backbuttonp {
+  font-size: 20px;
+}
+
+.bookbuttonp {
+  font-size: 24px;
+}
