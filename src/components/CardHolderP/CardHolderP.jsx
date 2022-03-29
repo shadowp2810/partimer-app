@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import Card from "../Card/Card";
 import "./CardHolderP.css";
 
-function CardHolderP(props) {
-  const [selected, setSelected] = useState([]);
+function CardHolderP({ selected, setSelected }) {
+  // const [selected, setSelected] = useState([]);
 
   const handleSelect = (id) => {
     const index = selected.indexOf(id);

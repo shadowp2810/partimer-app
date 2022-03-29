@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import { ArrowForward } from "@mui/icons-material";
 import CurrentBookingsButton from "../../components/CurrentBookingsButton/CurrentBookingsButton";
 import ProfileButton from "../../components/ProfileButton/ProfileButton";
@@ -7,6 +8,8 @@ import CardHolderP from "../../components/CardHolderP/CardHolderP";
 import "./HomeBusiness.css";
 
 function HomeBusiness(props) {
+  const [selected, setSelected] = useState([]);
+
   return (
     <div>
       <div className="profileNearMe">
@@ -32,14 +35,14 @@ function HomeBusiness(props) {
       {/* <div className="sorter">
         <p className="nearmeTextSort">▾</p>
       </div> */}
-      <CardHolderP />
+      <CardHolderP selected={selected} setSelected={setSelected} />
       <div className="homeNextButtonDiv">
         <button className="homeNextButton">
           <p className="homeNextText">Next</p>
           <div>
             <ArrowForward className="homeNextArrow" />
             <div>
-              <p className="homeNextTextNum">2</p>
+              <p className="homeNextTextNum">{selected.length}</p>
             </div>
           </div>
         </button>
