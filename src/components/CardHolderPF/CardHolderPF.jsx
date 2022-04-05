@@ -83,37 +83,39 @@ function CardHolderPF({
   }
   return (
     <div className="cardHolder__CHPF">
-      {partimersNM.map((partimerNM) => (
-        <div className="buttonDiv__CHPF" key={partimerNM.id}>
-          <button
-            className="buttonStyle__CHPF"
-            onClick={() => functionName(partimerNM)}
-          >
-            <Card
-              name={partimerNM.name}
-              skill1={partimerNM.skill1}
-              skill2={partimerNM.skill2}
-              skill3={partimerNM.skill3}
-              rating={partimerNM.rating}
-              distance={partimerNM.distance}
-            />
-          </button>
-          <button
-            className="buttonStyle__CHPF"
-            onClick={() => handleSelect(partimerNM.id)}
-          >
-            <div className="cardSelectorDiv__CHPF">
-              <div className="cardSelectorHole__CHPF">
-                {selected.indexOf(partimerNM.id) > -1 ? (
-                  <div className="cardSelectorHoleSelected__CHPF"></div>
-                ) : (
-                  <></>
-                )}
+      {partimersNM
+        .filter(({ id }) => selected.includes(id))
+        .map((partimerNM) => (
+          <div className="buttonDiv__CHPF" key={partimerNM.id}>
+            <button
+              className="buttonStyle__CHPF"
+              onClick={() => functionName(partimerNM)}
+            >
+              <Card
+                name={partimerNM.name}
+                skill1={partimerNM.skill1}
+                skill2={partimerNM.skill2}
+                skill3={partimerNM.skill3}
+                rating={partimerNM.rating}
+                distance={partimerNM.distance}
+              />
+            </button>
+            <button
+              className="buttonStyle__CHPF"
+              onClick={() => handleSelect(partimerNM.id)}
+            >
+              <div className="cardSelectorDiv__CHPF">
+                <div className="cardSelectorHole__CHPF">
+                  {selected.indexOf(partimerNM.id) > -1 ? (
+                    <div className="cardSelectorHoleSelected__CHPF"></div>
+                  ) : (
+                    <></>
+                  )}
+                </div>
               </div>
-            </div>
-          </button>
-        </div>
-      ))}
+            </button>
+          </div>
+        ))}
     </div>
   );
 }
