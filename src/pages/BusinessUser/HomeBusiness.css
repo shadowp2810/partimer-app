@@ -21,6 +21,8 @@
 .homesearchb__HB {
   background-color: #c4c4c4;
   font-size: 20px;
+  border: #424242 1px solid;
+  border-radius: 20px;
 }
 
 .homeNextButtonDiv__HB {
