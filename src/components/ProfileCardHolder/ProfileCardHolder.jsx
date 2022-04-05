@@ -4,7 +4,7 @@ import "./ProfileCardHolder.css";
 
 function ProfileCardHolder(props) {
   return (
-    <div className="cardHolderPH">
+    <div className="cardHolder__PCH">
       <ProfileCard />
       <ProfileCard />
       <ProfileCard />

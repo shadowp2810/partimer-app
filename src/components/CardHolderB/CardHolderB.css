@@ -1,15 +1,12 @@
-.cardHolder {
+.cardHolder__CHB {
   margin-top: 15px;
   height: 425px;
   overflow: scroll;
 }
 
-.buttonStyle {
+.buttonStyle__CHB {
   /* background-color: #4caf50; */
   text-align: center;
   text-decoration: none;
   display: inline-block;
-}
-
-.cardHolder {
 }

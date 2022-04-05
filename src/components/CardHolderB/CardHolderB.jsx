@@ -18,7 +18,7 @@ function CardHolderB(props) {
   }
 
   return (
-    <div className="cardHolder">
+    <div className="cardHolder__CHB">
       <CardB
         placename="Resterauntology"
         address="3216 Fairfield Road"

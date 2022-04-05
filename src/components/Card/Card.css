@@ -1,10 +1,11 @@
-.cardDiv {
+.cardDiv__C {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* cursor: pointer; */
 }
 
-.cardBody {
+.cardBody__C {
   display: flex;
   width: 285px;
   height: 120px;
@@ -16,7 +17,7 @@
   /* margin-bottom: 3px; */
 }
 
-.cardPhotoRating {
+.cardPhotoRating__C {
   width: 90px;
   height: 120px;
   display: flex;
@@ -26,7 +27,7 @@
   align-items: center;
 }
 
-.cardPhoto {
+.cardPhoto__C {
   width: 70px;
   height: 70px;
   border-radius: 20px;
@@ -34,19 +35,19 @@
   margin-top: 10px;
 }
 
-.cardRating {
+.cardRating__C {
   display: flex;
   font-size: 20px;
 }
 
-.cardNameTags {
+.cardNameTags__C {
   width: 170px;
   height: 120px;
   /* background-color: #aaaaaa; */
   padding-left: 5px;
 }
 
-.cardName {
+.cardName__C {
   font-size: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -81,7 +82,7 @@ li {
   background-color: white;
 } */
 
-.cardArrowKM {
+.cardArrowKM__C {
   width: 35px;
   height: 120px;
   /* background-color: red; */
@@ -91,30 +92,30 @@ li {
   align-items: center;
 }
 
-.profileArrowC {
+.profileArrowC__C {
   /* position: fixed; */
   /* left: 70px; */
   /* top: 8px; */
   transform: rotate(-45deg) scale(1.5);
 }
 
-.cardKM {
+.cardKM__C {
   margin-right: 2px;
 }
 
-.homesearchformb {
+.homesearchformb__C {
   width: 100%;
   height: 100%;
 }
 
-.homesearchb {
+.homesearchb__C {
   width: 80%;
   font-size: 20px;
   height: 85%;
   background-color: #c4c4c4;
 }
 
-.homesearchSb {
+.homesearchSb__C {
   width: 47px;
   height: 47px;
   font-size: 18px;

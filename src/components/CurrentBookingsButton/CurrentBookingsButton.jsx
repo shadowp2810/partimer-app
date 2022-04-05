@@ -5,9 +5,9 @@ import "./CurrentBookingsButton.css";
 function CurrentBookingsButton(props) {
   return (
     <>
-      <button className="currentbookingsButton">
-        <p className="currentbookingsText">Current Bookings</p>
-        <ArrowForward className="currentbookingsArrow" />
+      <button className="currentbookingsButton__CBB">
+        <p className="currentbookingsText__CBB">Current Bookings</p>
+        <ArrowForward className="currentbookingsArrow__CBB" />
       </button>
     </>
   );

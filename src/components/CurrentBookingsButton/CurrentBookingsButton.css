@@ -1,6 +1,6 @@
-.currentbookingsButton {
+.currentbookingsButton__CBB {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-color: #c4c4c4;
   margin-left: 5px;
   margin-top: 5px;
@@ -15,7 +15,7 @@
   box-shadow: -1px 6px 7px 0px rgba(0, 0, 0, 0.12); */
 }
 
-.currentbookingsText {
+.currentbookingsText__CBB {
   font-size: 24px;
   font-family: "DM Sans", sans-serif;
   padding-left: 1px;
@@ -25,8 +25,8 @@
   text-align: left;
 }
 
-.currentbookingsArrow {
-  position: fixed;
+.currentbookingsArrow__CBB {
+  /* position: fixed; */
   left: 105px;
   /* top: 5px; */
   transform: rotate(-45deg) scale(1.5);

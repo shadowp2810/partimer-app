@@ -1,11 +1,11 @@
-.mainDiv {
+.mainDiv__PC {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.nameDateRating {
-  width: 340px;
+.nameDateRating__PC {
+  width: 320px;
   height: 100px;
   margin-top: 3px;
   margin-bottom: 3px;
@@ -16,19 +16,19 @@
   border-bottom: 1px solid rgb(190, 190, 190);
 }
 
-.nameText {
+.nameText__PC {
   font-size: 22px;
 }
 
-.dateText {
+.dateText__PC {
   font-size: 18px;
 }
 
-.rating {
+.rating__PC {
   display: flex;
   flex-direction: row-reverse;
 }
 
-.ratingText {
+.ratingText__PC {
   font-size: 22px;
 }

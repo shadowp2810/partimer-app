@@ -1,10 +1,10 @@
-.cardDiv {
+.cardDiv__CB {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.cardBody {
+.cardBody__CB {
   display: flex;
   width: 340px;
   height: 120px;
@@ -16,13 +16,13 @@
   margin-bottom: 3px;
 }
 
-.cardRating {
+.cardRating__CB {
   display: flex;
   font-size: 24px;
   margin-right: 5px;
 }
 
-.cardNameTags {
+.cardNameTags__CB {
   width: 238px;
   height: 120px;
   /* background-color: #aaaaaa; */
@@ -32,19 +32,19 @@
   justify-content: space-between;
 }
 
-.cardName {
+.cardName__CB {
   font-size: 24px;
   /* margin-top: 5px; */
   margin-left: 5px;
 }
 
-.cardNameP {
+.cardNameP__CB {
   font-size: 26px;
   /* margin-top: 5px; */
   margin-left: 5px;
 }
 
-.cardSelectorDiv {
+.cardSelectorDiv__CB {
   width: 55px;
   height: 120px;
   background-color: #424242;
@@ -53,14 +53,14 @@
   align-items: center;
 }
 
-.cardSelectorHole {
+.cardSelectorHole__CB {
   width: 30px;
   height: 30px;
   border-radius: 30px;
   background-color: white;
 }
 
-.cardArrowKM {
+.cardArrowKM__CB {
   width: 102px;
   height: 120px;
   /* background-color: red; */
@@ -70,7 +70,7 @@
   align-items: flex-end;
 }
 
-.profileArrowC {
+.profileArrowC__CB {
   /* position: fixed; */
   /* left: 70px; */
   /* top: 8px; */
@@ -79,24 +79,24 @@
   margin-right: 10px;
 }
 
-.cardKM {
+.cardKM__CB {
   margin-right: 12px;
   font-size: 19px;
 }
 
-.homesearchformb {
+.homesearchformb__CB {
   width: 100%;
   height: 100%;
 }
 
-.homesearchb {
+.homesearchb__CB {
   width: 80%;
   font-size: 20px;
   height: 85%;
   background-color: #c4c4c4;
 }
 
-.homesearchSb {
+.homesearchSb__CB {
   width: 47px;
   height: 47px;
   font-size: 18px;

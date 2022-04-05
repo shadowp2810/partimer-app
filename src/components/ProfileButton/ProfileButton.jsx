@@ -5,9 +5,9 @@ import "./ProfileButton.css";
 function ProfileButton(props) {
   return (
     <>
-      <button className="profileButton">
-        <ArrowForward className="profileArrow" />
-        <p className="profileText">Profile</p>
+      <button className="profileButton__PB">
+        <p className="profileText__PB">Profile</p>
+        <ArrowForward className="profileArrow__PB" />
       </button>
     </>
   );

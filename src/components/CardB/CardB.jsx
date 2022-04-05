@@ -4,25 +4,25 @@ import { ArrowForward } from "@mui/icons-material";
 
 function CardB(props) {
   return (
-    <div className="cardDiv">
-      <div className="cardBody">
-        <div className="cardNameTags">
-          <div className="cardNameP">
+    <div className="cardDiv__CB">
+      <div className="cardBody__CB">
+        <div className="cardNameTags__CB">
+          <div className="cardNameP__CB">
             <p>{props.placename}</p>
           </div>
-          <div className="cardName">
+          <div className="cardName__CB">
             <p>{props.address}</p>
           </div>
-          <div className="cardName">
+          <div className="cardName__CB">
             <p>{props.offer}</p>
           </div>
         </div>
-        <div className="cardArrowKM">
+        <div className="cardArrowKM__CB">
           <div>
-            <ArrowForward className="profileArrowC" />
+            <ArrowForward className="profileArrowC__CB" />
           </div>
-          <p className="cardKM">{props.distance}km away</p>
-          <div className="cardRating">
+          <p className="cardKM__CB">{props.distance}km away</p>
+          <div className="cardRating__CB">
             <p>{props.rating} ☆</p>
           </div>
         </div>

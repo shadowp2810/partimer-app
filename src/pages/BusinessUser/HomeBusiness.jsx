@@ -5,6 +5,7 @@ import CurrentBookingsButton from "../../components/CurrentBookingsButton/Curren
 import ProfileButton from "../../components/ProfileButton/ProfileButton";
 import CardHolderP from "../../components/CardHolderP/CardHolderP";
 import ProfilePartimerBusiness from "./ProfilePartimerBusiness";
+import ProfilePartimerConfirmBusiness from "./ProfilePartimerConfirmBusiness";
 
 import "./HomeBusiness.css";
 
@@ -12,6 +13,7 @@ function HomeBusiness(props) {
   const [showHomeScreen, setShowHomeScreen] = useState(true);
   const [selected, setSelected] = useState([]);
   const [showPartimerProfile, setShowPartimerProfile] = useState(false);
+  const [showConfirmScreen, setShowConfirmScreen] = useState(false);
   const [idofpartimertoshow, setIdofpartimertoshow] = useState(-1);
 
   useEffect(() => {
@@ -19,11 +21,29 @@ function HomeBusiness(props) {
     console.log(showPartimerProfile);
   }, [idofpartimertoshow, showPartimerProfile]);
 
+  function function2(partimerNM) {
+    setShowConfirmScreen(true);
+  }
   return (
     <>
       {showPartimerProfile ? (
-        <div className="partimerProfileScreen">
+        <div className="partimerProfileScreen__HB">
           <ProfilePartimerBusiness
+            setShowPartimerProfile={setShowPartimerProfile}
+            idofpartimertoshow={idofpartimertoshow}
+          />
+        </div>
+      ) : (
+        <></>
+      )}
+
+      {showConfirmScreen ? (
+        <div className="partimerConfirmScreen__HB">
+          <ProfilePartimerConfirmBusiness
+            setShowConfirmScreen={setShowConfirmScreen}
+            selected={selected}
+            setSelected={setSelected}
+            setIdofpartimertoshow={setIdofpartimertoshow}
             setShowPartimerProfile={setShowPartimerProfile}
           />
         </div>
@@ -31,46 +51,52 @@ function HomeBusiness(props) {
         <></>
       )}
 
-      <div>
-        <div className="profileNearMe">
-          <ProfileButton />
-          <p className="nearmeText">Partimers Near Me.</p>
+      <div className="defaultHome__HB">
+        <div className="profileNearMe__HB">
+          <div className="profileButton__HB">
+            <ProfileButton />
+          </div>
+          <p className="nearmeText__HB">Partimers Near Me.</p>
         </div>
-
-        <CurrentBookingsButton />
-        <div className="homeBusinessSearch">
-          <form className="homesearchformb">
-            <label>
-              <input
-                type="text"
-                name="name"
-                placeholder="Search"
-                className="homesearchb"
-              />
-            </label>
-            <input type="submit" value="ⓢ" className="homesearchSb" />
-          </form>
+        <div className="currentbookingsButton__HB">
+          <CurrentBookingsButton />
         </div>
-        <p className="nearmeTextSort">▾</p>
-        {/* <div className="sorter">
-        <p className="nearmeTextSort">▾</p>
-      </div> */}
-        <CardHolderP
-          selected={selected}
-          setSelected={setSelected}
-          setIdofpartimertoshow={setIdofpartimertoshow}
-          setShowPartimerProfile={setShowPartimerProfile}
-        />
-        <div className="homeNextButtonDiv">
-          <button className="homeNextButton">
-            <p className="homeNextText">Next</p>
-            <div>
-              <ArrowForward className="homeNextArrow" />
-              <div>
-                <p className="homeNextTextNum">{selected.length}</p>
-              </div>
+        <div className="searchCHolderNextBMainDiv__HB">
+          <div className="searchCHolderNextBInsideDiv__HB">
+            <div className="homeBusinessSearch__HB">
+              <form>
+                <textarea
+                  name="search"
+                  placeholder="Search"
+                  className="homesearchb__HB"
+                  cols={20}
+                  rows={1}
+                />
+              </form>
             </div>
-          </button>
+            <div className="cardHolderP__HB">
+              <CardHolderP
+                selected={selected}
+                setSelected={setSelected}
+                setIdofpartimertoshow={setIdofpartimertoshow}
+                setShowPartimerProfile={setShowPartimerProfile}
+              />
+            </div>
+            <div className="homeNextButtonDiv__HB">
+              <button
+                className="homeNextButton__HB"
+                onClick={() => function2(selected)}
+              >
+                <p className="homeNextText__HB">Next</p>
+                <div>
+                  <ArrowForward className="homeNextArrow__HB" />
+                  <div>
+                    <p className="homeNextTextNum__HB">{selected.length}</p>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </>

@@ -1,9 +1,9 @@
 import React from "react";
 import { useEffect } from "react";
 import Card from "../Card/Card";
-import "./CardHolderP.css";
+import "./CardHolderPF.css";
 
-function CardHolderP({
+function CardHolderPF({
   selected,
   setSelected,
   setIdofpartimertoshow,
@@ -82,11 +82,11 @@ function CardHolderP({
     setShowPartimerProfile(true);
   }
   return (
-    <div className="cardHolder__CHP">
+    <div className="cardHolder__CHPF">
       {partimersNM.map((partimerNM) => (
-        <div className="buttonDiv__CHP" key={partimerNM.id}>
+        <div className="buttonDiv__CHPF" key={partimerNM.id}>
           <button
-            className="buttonStyle__CHP"
+            className="buttonStyle__CHPF"
             onClick={() => functionName(partimerNM)}
           >
             <Card
@@ -99,13 +99,13 @@ function CardHolderP({
             />
           </button>
           <button
-            className="buttonStyle__CHP"
+            className="buttonStyle__CHPF"
             onClick={() => handleSelect(partimerNM.id)}
           >
-            <div className="cardSelectorDiv__CHP">
-              <div className="cardSelectorHole__CHP">
+            <div className="cardSelectorDiv__CHPF">
+              <div className="cardSelectorHole__CHPF">
                 {selected.indexOf(partimerNM.id) > -1 ? (
-                  <div className="cardSelectorHoleSelected__CHP"></div>
+                  <div className="cardSelectorHoleSelected__CHPF"></div>
                 ) : (
                   <></>
                 )}
@@ -118,4 +118,4 @@ function CardHolderP({
   );
 }
 
-export default CardHolderP;
+export default CardHolderPF;

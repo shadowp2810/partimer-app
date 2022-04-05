@@ -1,67 +1,120 @@
-.mainDiv {
+.mainDiv__PPCB {
   display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: white;
   justify-content: center;
   align-items: center;
+  z-index: 2;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100vw;
 }
 
-.mainDivwidth {
-  width: 340px;
+.mainDivwidth__PPCB {
+  /* width: 340px; */
 }
 
-.pageTitle {
-  height: 80px;
+.pageTitle__PPCB {
+  height: 50px;
   /* background-color: red; */
 }
 
-.pageTitleText {
-  font-size: 40px;
+.pageTitleText__PPCB {
+  font-size: 30px;
   margin-top: 10px;
 }
 
-.hoursForm {
-  width: 50px;
+.peopleHoursRate__PPCB {
+  width: 355px;
+  height: 350px;
+  /* background-color: bisque; */
+  display: flex;
+  flex-direction: column;
 }
 
-.inputHoursForm {
-  width: 50px;
-  font-size: 24px;
+.peopleHoursRateL1__PPCB {
+  display: flex;
+  flex-direction: row;
+}
+
+.peopleHoursRateL2__PPCB {
+  display: flex;
+  flex-direction: row;
+}
+
+.peopleHoursRateL3__PPCB {
+  display: flex;
+  flex-direction: column;
+}
+
+.peopleHoursRateL4__PPCB {
+  display: flex;
+  flex-direction: row;
+  margin-top: 14px;
+}
+
+.peopleHoursRateL5__PPCB {
+  display: flex;
+  flex-direction: row;
+  margin-top: 14px;
+}
+
+.words__PPCB {
+  font-size: 19px;
+}
+
+.hoursForm__PPCB {
+  width: 45px;
+}
+
+.inputHoursForm__PPCB {
+  width: 60px;
+  font-size: 20px;
   margin-right: 2px;
   margin-left: 2px;
   background-color: #c4c4c4;
+  text-align: right;
 }
 
-.phoursForm {
+.phoursForm__PPCB {
   display: flex;
   flex-direction: row;
-  font-size: 24px;
+  font-size: 20px;
+  width: 300px;
 }
 
-.prateform {
+.measure__PPCB {
+  margin-left: 5px;
+}
+
+.prateform__PPCB {
   display: flex;
   flex-direction: row;
-  font-size: 24px;
+  font-size: 20px;
 }
 
-.hoursFormDiv {
+.hoursFormDiv__PPCB {
   margin-left: 2px;
-  margin-right: 2px;
-  padding-left: 4px;
-  padding-right: 20px;
-  padding-bottom: 10px;
+  margin-right: 22px;
+  padding-left: 0px;
+  padding-right: 7px;
+  padding-bottom: 5px;
 }
 
-.hoursFormDivrate {
+.hoursFormDivrate__PPCB {
   margin-left: 2px;
   margin-right: 2px;
   padding-left: 20px;
-  padding-right: 10px;
+  padding-right: 0px;
 }
 
-.removeAndList {
+.removeAndList__PPCB {
   padding-top: 10px;
+  height: 200px;
 }
 
-.removeDiv {
+.removeDiv__PPCB {
   width: 80px;
   height: 30px;
   background-color: #c4c4c4;
@@ -70,34 +123,35 @@
   align-items: center;
 }
 
-.removep {
+.removep__PPCB {
   font-size: 22px;
 }
 
-.removeDivMain {
+.removeDivMain__PPCB {
   width: 340px;
   display: flex;
   flex-direction: row-reverse;
   margin-bottom: 2px;
 }
 
-.twobuttonsMainDiv {
-  width: 340px;
+.twobuttonsMainDiv__PPCB {
+  width: 355px;
   display: flex;
   flex-direction: row;
   margin-bottom: 2px;
   /* justify-content: space-between; */
 }
 
-.twobuttonsDiv {
-  width: 340px;
+.twobuttonsDiv__PPCB {
+  width: 355px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
 
-.backbuttonDiv {
+.backbuttonDiv__PPCB {
   width: 80px;
   height: 40px;
   background-color: #c4c4c4;
@@ -107,20 +161,55 @@
   margin-top: 10px;
 }
 
-.bookbuttonDiv {
+.bookbuttonDiv__PPCB {
   width: 100px;
   height: 50px;
   background-color: #c4c4c4;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
-.backbuttonp {
+.backbuttonp__PPCB {
   font-size: 20px;
 }
 
-.bookbuttonp {
+.bookbuttonp__PPCB {
   font-size: 24px;
+}
+
+.backbuttonN__PPCB {
+  border: 0.5px;
+  padding: 0px;
+  background-color: white;
+}
+
+.bookbuttonN__PPCB {
+  border: 0.5px;
+  padding: 0px;
+  background-color: white;
+}
+
+.removebuttonN__PPCB {
+  border: 0.5px;
+  padding: 0px;
+  background-color: white;
+}
+
+.total__PPCB {
+  font-size: 20px;
+}
+
+.noteFormDiv__PPCB {
+}
+.noteForm__PPCB {
+}
+.inputNoteForm__PPCB {
+  /* width: 60px; */
+  font-size: 20px;
+  margin-right: 2px;
+  margin-left: 2px;
+  background-color: #c4c4c4;
+  text-align: right;
 }

@@ -1,76 +1,123 @@
-.absolute {
+.absolute__PPB {
   display: flex;
   flex-direction: column;
   position: absolute;
   background-color: white;
   justify-content: center;
   align-items: center;
+  z-index: 3;
+  width: 100vw;
+  /* height: 100vh; */
 }
 
-.maindivtop {
+.maindivtop__PPB {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
+  /* background-color: bisque; */
 }
 
-.almostAll {
-  width: 375px;
-  height: 150px;
-  border-bottom: 1px solid black;
-}
-
-.maindivbottom {
+.almostAll__PPB {
+  width: 98vw;
+  height: 200px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.twobuttons {
-  width: 340px;
-  display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid black;
+  /* border-bottom: 1px solid black; */
 }
 
-.profile {
+.profile__PPB {
   display: flex;
   flex-direction: row;
 }
 
-.photoDiv {
+.photoDiv__PPB {
   width: 102px;
 }
 
-.photo {
+.photo__PPB {
   width: 95px;
   height: 95px;
   border-radius: 25px;
   background-color: rgb(231, 231, 231);
   margin-top: 10px;
+  margin-left: 10px;
 }
 
-.detailsDiv {
+.detailsDiv__PPB {
   width: 238px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-left: 15px;
 }
 
-.pnameNumberText {
-  margin-left: 20px;
+.pnameNumberText__PPB {
+  margin-left: 15px;
 }
-.pnameText {
+.pnameText__PPB {
   font-size: 22px;
   margin-top: 10px;
 }
 
-.numberText {
+.numberText__PPB {
   font-size: 20px;
+  margin-bottom: 10px;
 }
 
-li {
+.kmRating__PPB {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: solid black 1px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-bottom: 2px;
+}
+
+.kmtext__PPB {
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.kmrating__PPB {
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.cardHolder__PPB {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  z-index: 0;
+  height: 350px;
+}
+
+.maindivbottom__PPB {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  z-index: 1;
+}
+
+.twobuttons__PPB {
+  width: 98vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid black;
+  padding-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+
+.cardTags__PPB li {
   background-color: white;
   display: inline-block;
   padding-left: 5px;
@@ -78,26 +125,12 @@ li {
   margin-left: 5px;
   margin-right: 10px;
   margin-top: 3px;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
   border-radius: 10px;
   border: 1px solid black;
 }
 
-.kmRating {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.kmtext {
-  font-size: 18px;
-}
-
-.kmrating {
-  font-size: 18px;
-}
-
-.backButton {
+.backButton__PPB {
   margin-top: 10px;
   width: 100px;
   height: 50px;
@@ -105,8 +138,10 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 
-.backButtonText {
+.backButtonText__PPB {
   font-size: 20px;
 }
