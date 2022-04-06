@@ -27,7 +27,7 @@
 
 .peopleHoursRate__PPCB {
   width: 355px;
-  height: 350px;
+  height: 380px;
   /* background-color: bisque; */
   display: flex;
   flex-direction: column;
@@ -43,9 +43,17 @@
   flex-direction: row;
 }
 
+.peopleHoursRateL25__PPCB {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
 .peopleHoursRateL3__PPCB {
   display: flex;
   flex-direction: column;
+  margin-top: 15px;
 }
 
 .peopleHoursRateL4__PPCB {
@@ -108,6 +116,9 @@
   padding-left: 20px;
   padding-right: 0px;
 }
+
+
+
 
 .removeAndList__PPCB {
   padding-top: 10px;

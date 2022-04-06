@@ -3,6 +3,11 @@ import { useState, useRef } from "react";
 import "./ProfilePartimerConfirmBusiness.css";
 import CardHolderPF from "../../components/CardHolderPF/CardHolderPF";
 
+import TextField from "@mui/material/TextField";
+import AdapterDateFns from "@mui/lab/AdapterDateFns";
+import LocalizationProvider from "@mui/lab/LocalizationProvider";
+import MobileDateTimePicker from "@mui/lab/MobileDateTimePicker";
+
 function ProfilePartimerConfirmBusiness({
   setShowConfirmScreen,
   selected,
@@ -10,11 +15,12 @@ function ProfilePartimerConfirmBusiness({
   setIdofpartimertoshow,
   setShowPartimerProfile,
 }) {
-  // const [inputValueHours, setInputValueHours] = useState(0);
-  // const [inputValueRate, setInputValueRate] = useState(0);
   const [inputValuePeople, setInputValuePeople] = useState(0);
   const [inputValueTotal, setInputValueTotal] = useState(0);
-  // const [inputValueNote, setInputValueNote] = useState("");
+
+  const [theDateTime, setTheDateTime] = React.useState(
+    new Date("2022-04-01T00:00:00.000Z")
+  );
 
   const inputValueNumber = useRef(0);
   const inputValueHours = useRef(0);
@@ -22,7 +28,6 @@ function ProfilePartimerConfirmBusiness({
   const inputNote = useRef("");
 
   function functionBackButtonConfirm(value) {
-    // setIdofpartimertoshow(partimerNM);
     setShowConfirmScreen(false);
   }
 
@@ -90,10 +95,33 @@ function ProfilePartimerConfirmBusiness({
                 />
               </form>
             </div>
-            <p className="words__PPCB">{"$/h per worker."}</p>
+            <p className="words__PPCB">{"$/h per worker"}</p>
           </div>
+          <div className="peopleHoursRateL25__PPCB">
+            <pre className="words__PPCB">{"at "}</pre>
+
+            <LocalizationProvider dateAdapter={AdapterDateFns}>
+              <MobileDateTimePicker
+                value={theDateTime}
+                onChange={(newValue) => {
+                  setTheDateTime(newValue);
+                }}
+                renderInput={(params) => (
+                  <TextField
+                    {...params}
+                    sx={{
+                      width: "200px",
+                      "background-color": "#c4c4c4",
+                    }}
+                  />
+                )}
+              />
+            </LocalizationProvider>
+            <pre className="words__PPCB">{""}</pre>
+          </div>
+
           <div className="peopleHoursRateL3__PPCB">
-            <p className="words__PPCB">Note: </p>
+            <p className="words__PPCB">Instructions: </p>
             <div className="noteFormDiv__PPCB">
               <form className="noteForm__PPCB">
                 <textarea
@@ -119,9 +147,8 @@ function ProfilePartimerConfirmBusiness({
           </div>
           <div className="peopleHoursRateL5__PPCB">
             <p className="words__PPCB">
-              Booking offer will be up for 1h. Make sure to make more offers
-              than you need to ensure placement. First{" "}
-              {inputValuePeople ? inputValuePeople : 0} out of selected{" "}
+              Make sure to make more offers than you need to ensure placement.
+              First {inputValuePeople ? inputValuePeople : 0} out of selected{" "}
               {selected.length} to accept get the booking.
             </p>
           </div>
