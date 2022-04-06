@@ -1,5 +1,5 @@
 import React from "react";
-import ProfileCardHolder from "../../components/ProfileCardHolder/ProfileCardHolder";
+import ProfileCardHolder from "../../components/BusinessComponents/ProfileCardHolder/ProfileCardHolder";
 import "./ProfilePartimerBusiness.css";
 
 function ProfilePartimerBusiness({

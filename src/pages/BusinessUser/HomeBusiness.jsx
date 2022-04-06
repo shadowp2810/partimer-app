@@ -1,9 +1,9 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { ArrowForward } from "@mui/icons-material";
-import CurrentBookingsButton from "../../components/CurrentBookingsButton/CurrentBookingsButton";
-import ProfileButton from "../../components/ProfileButton/ProfileButton";
-import CardHolderP from "../../components/CardHolderP/CardHolderP";
+import CurrentBookingsButton from "../../components/BusinessComponents/CurrentBookingsButton/CurrentBookingsButton";
+import ProfileButton from "../../components/BusinessComponents/ProfileButton/ProfileButton";
+import CardHolderP from "../../components/BusinessComponents/CardHolderP/CardHolderP";
 import ProfilePartimerBusiness from "./ProfilePartimerBusiness";
 import ProfilePartimerConfirmBusiness from "./ProfilePartimerConfirmBusiness";
 

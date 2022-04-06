@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useState, useRef } from "react";
 import "./ProfilePartimerConfirmBusiness.css";
-import CardHolderPF from "../../components/CardHolderPF/CardHolderPF";
+import CardHolderPF from "../../components/BusinessComponents/CardHolderPF/CardHolderPF";
 
 import TextField from "@mui/material/TextField";
 import AdapterDateFns from "@mui/lab/AdapterDateFns";
